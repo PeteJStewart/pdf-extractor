@@ -115,3 +115,22 @@ This command processes up to 5 PDF files from the specified source directory, ex
 - **Dependency Issues:** Double-check that all Python dependencies are installed using `pip install -r requirements.txt`.
 
 Happy extracting!
+
+## Testing
+
+To run the tests:
+
+1. Install development dependencies:
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+
+2. Run the tests:
+   ```bash
+   pytest
+   ```
+
+The tests verify that:
+- Files are properly processed on first run
+- Previously processed files are skipped on subsequent runs
+- The log file correctly tracks processed files
